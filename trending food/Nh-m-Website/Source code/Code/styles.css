@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    font-size: 12px;
+}
+:root {
+    --primary-color:#a8cef0;
+    --secondary-color:#2585b5;
+    --info-color: #409fec;
+    --background-color:#f2f4f7;
+    --logo-color:#3795d5;
+    --bk-color:#a6d7ea;
+    --white-color:#f9f9f9;
+
+}
+header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 60px;
+    
+    position: fixed;
+    width: 100%;
+    z-index: 1000
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    display: flex;
+    
+    margin-left: 30px;
+    align-items: center;
+    flex:1;
+    
+}
+#logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--logo-color);
+    font-size: 1.2 rem;
+    
+}
+#logo a:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách cho thẻ a cuối cùng */
+}
+#header-menu {
+    flex:2;
+    list-style: none;
+    font-size:smaller;
+    display: flex;
+    font-weight: 655;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+
+}
+#header-menu a{
+    color: var(--secondary-color);
+    
+}
+#header-menu a:hover{
+    color: var(--info-color);
+    
+}
+
+#letter-info {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#letter-info > button {
+    border: none;
+    padding: 7px;
+    color: var(--white-color);
+    font-weight: 500;
+    border-radius: 6px;
+    width: 120px;
+    font-size:small;
+    background-color: var(--bk-color);
+    flex-wrap: wrap;
+}
+
+#letter-info > button:hover {
+    background-color: var(--info-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 476px){
+    header{
+        flex-direction: column;
+        gap:8px;
+    }
+    
+    
+}
+

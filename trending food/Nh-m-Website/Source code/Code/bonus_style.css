@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+.people {
+    background-image: url('https://marketplace.canva.com/EAEKwGau8wo/1/0/1600w/canva-m%C3%A0u-be-v%C3%A0-m%C3%A0u-ph%E1%BA%A5n-h%C3%ACnh-kh%E1%BB%91i-h%C3%A0i-h%C6%B0%E1%BB%9Bc-%26-c%C3%B3-th%E1%BB%83-chia-s%E1%BA%BB-h%C3%ACnh-n%E1%BB%81n-%E1%BA%A3o-PsWZBQ8hh6E.jpg'); /* Thay thế bằng URL của ảnh nền */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    text-align: center; /* Căn giữa chữ trong footer */
+    color: rgb(8, 7, 7);
+}
+
+.bonus-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; /* Căn chỉnh các testimonial */
+    flex-wrap: wrap;
+}
+
+.bonus {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 220px;
+    text-align: center; /* Căn giữa chữ trong từng testimonial */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bonus img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.bonus p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.bonus h4 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.bonus span {
+    color: #888;
+}
+.bonus:hover {
+    transform: translateY(-10px); /* Nâng lên khi hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Tăng độ bóng khi hover */
+}
+.chu h2 {
+    font-family: 'Londrina Sketch', sans-serif; /* Thay đổi kiểu chữ cho tiêu đề */
+    font-size: 50px; /* Kích thước chữ cho tiêu đề */
+    color: #333; /* Màu chữ cho tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+    font-weight: bold; /* Đậm chữ */
+}
